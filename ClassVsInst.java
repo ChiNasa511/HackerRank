@@ -1,4 +1,5 @@
 // Day 4
+// Learn about the difference between a class and an instance
 //
 // @author Chinasa T. Okolo 
 

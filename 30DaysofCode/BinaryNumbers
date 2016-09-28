@@ -1,0 +1,31 @@
+// Day 10
+// Given an integer, convert it to binary.
+// Then find and print the integer denoting the
+// maximum number of consecutive 1's in binary representation.
+//
+// @author Chinasa T. Okolo 
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        
+        // Split string using 0 as delimeter
+        String[] group = Integer.toBinaryString(n).split("0");
+        int max = 0;
+        // Iterate through array and print longest length
+        for (String s : group) {
+            if (max < s.length()) {
+                max = s.length();
+            }
+        }
+        System.out.println(max);
+    }
+}

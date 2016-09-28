@@ -1,4 +1,5 @@
 // Day 5
+// Use loops to help us do some simple math
 //
 // @author Chinasa T. Okolo
 
